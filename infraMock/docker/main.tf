@@ -19,6 +19,10 @@ resource "aws_dynamodb_table" "user_table" {
     name = "client_id"
     type = "S"
   }
+  attribute {
+    name = "balance"
+    type = "N"
+  }
   
 }
 
